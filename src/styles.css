@@ -1,3 +1,9 @@
 body {
   background: pink;
 }
+.container {
+  background: white;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+}
