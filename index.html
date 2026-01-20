@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
+    <link rel="javascript" href="src/index.js" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,29 +14,33 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <main>
+    <div class="weather-app">
+      <header>
         <form class="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
+            id="search-form-input"
             class="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
-
-        <h1 class="weather-app-city">Paris</h1>
+      </header>
+      <main>
         <div class="weather-app-data">
-          <p class="weather-app-details">
-            Tuesday 14:57, scattered clouds
-            <br />
-            Humidity: <strong>24%</strong>, Wind: <strong>23mph</strong>
-          </p>
+          <div class="weather-app-text">
+            <h1 class="weather-app-city" id="city">Paris</h1>
+            <p class="weather-app-details">
+              Tuesday 14:57, scattered clouds
+              <br />
+              Humidity: <strong>24%</strong>, Wind: <strong>23mph</strong>
+            </p>
+          </div>
 
           <div class="weather-app-temperature-container">
             <div class="weather-app-emoji">🌥</div>
-            <div class="weather-app temp-value">14</div>
+            <div class="weather-app-temp-value">14</div>
             <div class="weather-app-unit">°C</div>
           </div>
         </div>
@@ -57,5 +62,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
