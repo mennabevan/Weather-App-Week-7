@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
-    <link rel="javascript" href="src/index.js" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,9 +32,10 @@
           <div class="weather-app-text">
             <h1 class="weather-app-city" id="city"></h1>
             <p class="weather-app-details">
-              Tuesday 14:57, scattered clouds
+              <span id="time"></span>, <span id="description"></span>
               <br />
-              Humidity: <strong>24%</strong>, Wind: <strong>23mph</strong>
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
 
